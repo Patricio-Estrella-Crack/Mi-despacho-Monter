@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despacho Contable | Profesional</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-balance-scale"></i> MI<span>DESPACHO</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#testimonios">Clientes</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+        </ul>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="rotator-container">
+                <h1 class="rotate-text active">Dictamen del Impuesto sobre Nómina 4% CDMX</h1>
+                <h1 class="rotate-text">Contabilidad Integral para Empresas</h1>
+                <h1 class="rotate-text">Estrategia Fiscal Especializada</h1>
+            </div>
+            
+            <div class="slider-bullets">
+                <span class="bullet active" onclick="currentSlide(0)"></span>
+                <span class="bullet" onclick="currentSlide(1)"></span>
+                <span class="bullet" onclick="currentSlide(2)"></span>
+            </div>
+
+            <p class="sub-text">Presenta el aviso y el dictamen con contadores calificados</p>
+            <a href="javascript:void(0)" id="openModal" class="btn-red">Más información <i class="fas fa-chevron-right"></i></a>
+        </div>
+    </header>
+
+    <section id="historia" class="section">
+        <div class="container container-history">
+            <div class="history-text">
+                <h2>Nuestra Historia</h2>
+                <p><strong>Fundado en 2005</strong> por el Lic. Eduardo Monter, <strong>MiDespacho</strong> nació con la visión de revolucionar la asesoría contable y fiscal en México. Lo que comenzó como un pequeño estudio dedicado a la consultoría de Pymes, se ha transformado hoy en un despacho líder con cobertura nacional.</p>
+                <p>Con más de 18 años de trayectoria ininterrumpida, hemos consolidado un equipo interdisciplinario de expertos certificados. Nuestra misión es simple pero poderosa: transformar la contabilidad de una obligación en una herramienta estratégica de crecimiento para nuestros clientes, basándonos siempre en la ética, la transparencia y la innovación tecnológica.</p>
+            </div>
+            <div class="history-ceo">
+                <img src="CEO.jpg" alt="CEO Eduardo Monter" class="ceo-photo">
+                <div class="ceo-label">
+                    <strong>Eduardo Monter</strong>
+                    <span>Fundador & CEO</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="section bg-light">
+        <div class="container">
+            <h2>Servicios Especializados</h2>
+            <div class="services-carousel-wrapper">
+                <div class="services-carousel-track">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                        <h3>Fiscal y Tributario</h3>
+                        <p>Cálculo y presentación de declaraciones mensuales, anuales e informativas.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-calculator"></i></div>
+                        <h3>Contabilidad General</h3>
+                        <p>Llevamos tu contabilidad de punta a punta: estados financieros y registros.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-balance-scale"></i></div>
+                        <h3>Dictamen Fiscal 4%</h3>
+                        <p>Expertos en el Dictamen sobre Nómina y otros dictámenes obligatorios en CDMX.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-users-cog"></i></div>
+                        <h3>Gestión de Nóminas</h3>
+                        <p>Administración de nóminas, cálculo de ISR y cuotas patronales IMSS.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-user-check"></i></div>
+                        <h3>Auditoría Interna</h3>
+                        <p>Fortalecimiento de controles internos para prevenir riesgos normativos.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Asesoría Estratégica</h3>
+                        <p>Consultoría financiera para la toma de decisiones y planes de expansión.</p>
+                    </div>
+                </div>
+                <button class="carousel-btn prev" onclick="moveCarousel(-1)">❮</button>
+                <button class="carousel-btn next" onclick="moveCarousel(1)">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios" class="section">
+        <div class="container">
+            <h2>Valoraciones de clientes</h2>
+            <div class="rating-summary-card">
+                <div class="summary-left">
+                    <div class="main-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="score">4.9 / 5.00</p>
+                    <p class="excellent">Excelente</p>
+                </div>
+                <div class="summary-right">
+                    <div class="bar-row"><span class="stars-label">5 estrellas</span> <div class="bar-container"><div class="bar-fill" style="width: 95%;"></div></div> <span class="count">272</span></div>
+                    <div class="bar-row"><span class="stars-label">4 estrellas</span> <div class="bar-container"><div class="bar-fill" style="width: 5%;"></div></div> <span class="count">14</span></div>
+                </div>
+            </div>
+
+            <div class="testimonials-list">
+                <div class="testimonial-formal-card">
+                    <div class="card-header">
+                        <div class="card-info"><strong>Ing. Luis Flores</strong><span>Tech Solutions S.A.</span></div>
+                        <div class="card-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <p class="card-body">"Más de 8 años confiando en su precisión. Son fundamentales para nuestra expansión."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ubicacion" class="section bg-light">
+        <div class="container-split container">
+            <div class="info-contact">
+                <h2>Nuestra Oficina</h2>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Condominio R35 Lt17, Tolotzin I, 55114 Ecatepec de Morelos, Méx.</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                </div>
+            </div>
+<div class="map-box">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3759.5996375979707!2d-99.02349190000001!3d19.558794799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f1b682b3921b%3A0x691471df3893a56!2sCarnitas%20Michoacanas%20%E2%80%9CLa%20Tarasca%E2%80%9D!5e0!3m2!1ses-419!2smx!4v1775930704554!5m2!1ses-419!2smx" 
+        width="100%" 
+        height="350" 
+        style="border:0; border-radius:15px;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+</div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/525580059625?text=Hola,%20vengo%20de%20tu%20sitio%20web%20y%20requiero%20información" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i> <span>WhatsApp</span>
+    </a>
+
+    <div id="servicesModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <h2 id="modalTitle"></h2>
+            <hr>
+            <p id="modalDescription"></p>
+            <div class="modal-footer">
+                <a href="https://wa.me/525580059625" class="btn-red" target="_blank">Consultar ahora</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
